@@ -41,18 +41,9 @@ The dataset contains child nutrition data by country. Key columns:
 ## Model
 - **Algorithm:** Random Forest Classifier  
 - **Train/Test Split:** 80% train, 20% test  
-  
 - **Evaluation Metrics:** Accuracy, Confusion Matrix  
 
-Example:
-
-```text
-Accuracy: 0.96
-Confusion Matrix:
-[[46  2]
- [ 1 31]]
-
- Mini Web App
+Mini Web App
 
 Built with Streamlit.
 
@@ -61,12 +52,9 @@ Input fields for Severe Wasting, Wasting, Overweight, Stunting, Underweight (%).
 Displays Low / High Malnutrition Risk instantly.
 
 Sample Input / Output
-
-| Severe Wasting (%) | Wasting (%) | Overweight (%) | Stunting (%) | Underweight (%) | Predicted Risk |
-| ------------------ | ----------- | -------------- | ------------ | --------------- | -------------- |
-| 2                  | 6           | 4              | 12           | 5               | HIGH           |
-| 1                  | 3           | 4              | 8            | 2               | LOW            |
-
+Severe Wasting (%)	Wasting (%)	Overweight (%)	Stunting (%)	Underweight (%)	Predicted Risk
+2	6	4	12	5	HIGH
+1	3	4	8	2	LOW
 Installation
 
 Clone the repository.
@@ -78,14 +66,15 @@ pip install -r requirements.txt
 Run the app:
 
 streamlit run malnutrition_app.py
-
 Project Structure
-| File/Folder               | Description                         |
-| ------------------------- | ----------------------------------- |
-| malnutrition_app.py       | Streamlit web app for predictions   |
-| malnutrition_model_v1.pkl | Trained Random Forest model     |
-| requirements.txt          | Python dependencies for the project |
-| README.md                 | Project documentation               |
+File/Folder	Description
+malnutrition_app.py	Streamlit web app for predictions
+malnutrition_model_v1.pkl	Trained Random Forest model
+requirements.txt	Python dependencies for the project
+README.md	Project documentation
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE
+ file for details.
