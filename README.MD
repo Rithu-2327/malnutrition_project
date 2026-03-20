@@ -51,13 +51,15 @@ Input fields for Severe Wasting, Wasting, Overweight, Stunting, Underweight (%).
 
 Displays Low / High Malnutrition Risk instantly.
 
-Sample Input / Output
-Severe Wasting (%)	Wasting (%)	Overweight (%)	Stunting (%)	Underweight (%)	Predicted Risk
-2	6	4	12	5	HIGH
-1	3	4	8	2	LOW
----
-Installation
+Sample Input / Output 
 
+|Severe Wasting (%)|	Wasting (%)|	Overweight (%)|	Stunting (%)|	Underweight (%)	|Predicted Risk  |
+|------------------|------------|---------------|-------------|---------------- |----------------|              
+|     2            |   6        |    4          |    12	      |    5            |  HIGH          |
+|     1    	       |   3        |  	 4	         |    8	       |   2	            |  LOW           |
+
+## Installation
+----
 Clone the repository.
 
 Install dependencies:
@@ -65,11 +67,11 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 Run the app:
-
+```
 streamlit run malnutrition_app.py
-
+```
 
 ## License
-
+----
 This project is licensed under the MIT License. See the LICENSE
  file for details.
